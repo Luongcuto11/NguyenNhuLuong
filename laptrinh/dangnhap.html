@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập & Đăng Ký</title>
+    <link rel="stylesheet" href="dangnhap.css">
+    <script defer src="dangnhap.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box" id="login-box">
+            <h2>Đăng Nhập</h2>
+            <div class="input-group">
+                <label for="login-username">Tên đăng nhập</label>
+                <input type="text" id="login-username" placeholder="Nhập tên đăng nhập">
+            </div>
+            <div class="input-group">
+                <label for="login-password">Mật khẩu</label>
+                <input type="password" id="login-password" placeholder="Nhập mật khẩu">
+            </div>
+            <button onclick="handleLogin()"><a href="/laptrinh/NguyenNhuLuong.html">Đăng nhập</a></button>
+            <p>Bạn chưa có tài khoản?</p><button><a href="#" onclick="showRegister()">Đăng ký</a></button>
+        </div>
+
+        <div class="form-box hidden" id="register-box">
+            <h2>Đăng Ký</h2>
+            <div class="input-group">
+                <label for="register-username">Tên đăng nhập</label>
+                <input type="text" id="register-username" placeholder="Nhập tên đăng nhập">
+            </div>
+            <div class="input-group">
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" placeholder="Nhập email">
+            </div>
+            <div class="input-group">
+                <label for="register-password">Mật khẩu</label>
+                <input type="password" id="register-password" placeholder="Nhập mật khẩu">
+            </div>
+            <button onclick="handleRegister()">Đăng Ký</button>
+            <p>Đã có tài khoản?</p> <button<a href="#" onclick="showLogin()">Đăng nhập</a></button>
+        </div>
+    </div>
+</body>
+</html>
